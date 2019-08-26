@@ -4,7 +4,8 @@ import Section from '@/components/Section';
 import Layout from '@/layouts/Main';
 import styled from 'styled-components';
 import { Row, Col } from 'antd';
-import FeatureItem from '@/components/FeatureItem';
+import Scenario from '@/components/Scenario';
+import Item from '@/components/Item';
 
 const Title = styled.h1<{
   color?: string;
@@ -14,47 +15,34 @@ const Title = styled.h1<{
   color: ${props => props.color || 'rgb(255,255,255)'};
 `;
 
-const ScenarioItem: React.FC<{ style: object }> = ({ style }) => (
-  <Col
-    xs={8}
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      ...style,
-    }}
-  >
-    <h2 style={{ color: 'white' }}>Certificates</h2>
-    <img
-      src="https://dummyimage.com/100x100.jpg?text=icon"
-      style={{ height: '160px', width: '160px', marginBottom: '30px' }}
-    />
-  </Col>
-);
-
 export default function Index() {
   return (
     <Layout>
       <Section background="linear-gradient(125deg, rgb(0, 156, 255), rgb(0, 266, 158))">
-        <Title>section</Title>
+        <img src="https://dummyimage.com/120x60.gif" />
+        <span>BiiMe</span>
+        <Title color="rgb(28, 42, 77)">Universal open DLT ID solution</Title>
       </Section>
       <Section background="rgb(22, 30, 60)">
         <Title fontSize={36}>Feature of BiiMe</Title>
         <Row style={{ width: '100%', padding: '20px' }}>
-          <FeatureItem
+          <Item
+            icon="https://dummyimage.com/100x100.jpg?text=icon"
             title="Digital ID"
             description="Containing the certificate and verification, so it makes KYC reusable to lower the cost of tracing for data authentication."
           />
-          <FeatureItem
+          <Item
+            icon="https://dummyimage.com/100x100.jpg?text=icon"
             title="Digital ID"
             description="Containing the certificate and verification, so it makes KYC reusable to lower the cost of tracing for data authentication."
           />
-          <FeatureItem
+          <Item
+            icon="https://dummyimage.com/100x100.jpg?text=icon"
             title="Digital ID"
             description="Containing the certificate and verification, so it makes KYC reusable to lower the cost of tracing for data authentication."
           />
-          <FeatureItem
+          <Item
+            icon="https://dummyimage.com/100x100.jpg?text=icon"
             title="Digital ID"
             description="Containing the certificate and verification, so it makes KYC reusable to lower the cost of tracing for data authentication."
           />
@@ -63,45 +51,84 @@ export default function Index() {
       <Section background="linear-gradient(125deg, rgb(0, 156, 255), rgb(0, 266, 158))">
         <Title>Application Scenarios</Title>
         <Row>
-          <ScenarioItem
+          <Scenario
             style={{
               borderRight: '1px solid white',
               borderBottom: '1px solid white',
             }}
           />
-          <ScenarioItem
+          <Scenario
             style={{
               borderRight: '1px solid white',
               borderBottom: '1px solid white',
             }}
           />
-          <ScenarioItem
+          <Scenario
             style={{
               borderBottom: '1px solid white',
             }}
           />
-          <ScenarioItem
+          <Scenario
             style={{
               borderRight: '1px solid white',
             }}
           />
-          <ScenarioItem
+          <Scenario
             style={{
               borderRight: '1px solid white',
             }}
           />
-          <ScenarioItem style={{}} />
+          <Scenario style={{}} />
         </Row>
       </Section>
       <Section background="white">
         <Title color="rgb(58, 173, 212)">
           How BiiMe works for your services?
         </Title>
+        <img src="https://dummyimage.com/1200x200.gif" />
+        <Row style={{ width: '100%', padding: '20px' }}>
+          <Item
+            color="rgb(58,173,212)"
+            title="Get BiiMe DID"
+            description="Service owners may use your existing account system and connect BiiMe with OAuth API, or using BiiMe APP developed by BiiLabs directly."
+          />
+          <Item
+            color="rgb(58,173,212)"
+            title="Get BiiMe DID"
+            description="Service owners may use your existing account system and connect BiiMe with OAuth API, or using BiiMe APP developed by BiiLabs directly."
+          />
+          <Item
+            color="rgb(58,173,212)"
+            title="Get BiiMe DID"
+            description="Service owners may use your existing account system and connect BiiMe with OAuth API, or using BiiMe APP developed by BiiLabs directly."
+          />
+          <Item
+            color="rgb(58,173,212)"
+            title="Get BiiMe DID"
+            description="Service owners may use your existing account system and connect BiiMe with OAuth API, or using BiiMe APP developed by BiiLabs directly."
+          />
+        </Row>
       </Section>
       <Section background="rgb(125, 204, 243)">
         <Title color="rgb(28, 42, 77)">
           Experiene the universal DID service on BiiMe
         </Title>
+        <Row style={{ width: '100%', marginBottom: '40px' }}>
+          <Col xs={4} />
+          <Col xs={2}>
+            <img
+              src="https://dummyimage.com/80x80.gif"
+              style={{ borderRadius: '12%' }}
+            />
+          </Col>
+          <Col xs={18}>
+            <ul>
+              <li>Integrate multiple services cross ID system</li>
+              <li>Integrate multiple services cross ID system</li>
+              <li>Integrate multiple services cross ID system</li>
+            </ul>
+          </Col>
+        </Row>
       </Section>
     </Layout>
   );
