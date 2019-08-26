@@ -3,7 +3,8 @@ import React from 'react';
 import Section from '@/components/Section';
 import Layout from '@/layouts/Main';
 import styled from 'styled-components';
-import { Row, Col } from 'antd';
+import { Row } from 'antd';
+import FeatureItem from '@/components/FeatureItem';
 
 const Title = styled.h1<{
   color?: string;
@@ -12,41 +13,6 @@ const Title = styled.h1<{
   font-size: ${props => props.fontSize || 18}pt;
   color: ${props => props.color || 'rgb(255,255,255)'};
 `;
-
-const Icon = styled.img`
-  border-radius: 50%;
-  margin-bottom: 15px;
-`;
-
-const Description = styled.p`
-  color: white;
-  font-size: 13.5px;
-`;
-
-const IconTitle = styled.h2`
-  color: white;
-  font-size: 21.6px;
-`;
-
-const FeatureItem: React.FC<{
-  title: string;
-  description: string;
-}> = ({ title, description }) => (
-  <Col
-    sm={6}
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      alignItems: 'center',
-      padding: '0 18px',
-    }}
-  >
-    <Icon src="https://dummyimage.com/100x100.jpg?text=icon" />
-    <IconTitle>{title}</IconTitle>
-    <Description>{description}</Description>
-  </Col>
-);
 
 export default function Index() {
   return (

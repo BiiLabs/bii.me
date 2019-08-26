@@ -29,6 +29,10 @@ const NavTitle = styled.span`
   transform: translateY(5px);
 `;
 
+const A = styled.a`
+  margin-right: 20px;
+`;
+
 export default () => (
   <StyledHeader>
     <span>
@@ -36,12 +40,20 @@ export default () => (
       <NavTitle>{NAV_TITLE}</NavTitle>
     </span>
     <span>
-      <Link href="/" as={getRelativePath('/')}>
-        <a>Home</a>
+      <Link href="#features">
+        <A>Features</A>
       </Link>
-      {' | '}
-      <Link href="/about" as={getRelativePath('/about')}>
-        <a>About</a>
+      <Link href="#scenarios">
+        <A>Scenarios</A>
+      </Link>
+      <Link href="#how-it-work">
+        <A>How it works</A>
+      </Link>
+      <Link href="download">
+        <A>Download</A>
+      </Link>
+      <Link href="#biilabs">
+        <A>BiiLabs</A>
       </Link>
     </span>
   </StyledHeader>
