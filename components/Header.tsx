@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styled from 'styled-components';
 import { Layout } from 'antd';
 
@@ -40,21 +39,11 @@ export default () => (
       <NavTitle>{NAV_TITLE}</NavTitle>
     </span>
     <span>
-      <Link href="#features">
-        <A>Features</A>
-      </Link>
-      <Link href="#scenarios">
-        <A>Scenarios</A>
-      </Link>
-      <Link href="#how-it-work">
-        <A>How it works</A>
-      </Link>
-      <Link href="download">
-        <A>Download</A>
-      </Link>
-      <Link href="#biilabs">
-        <A>BiiLabs</A>
-      </Link>
+      <A href="#features">Features</A>
+      <A href="#scenarios">Scenarios</A>
+      <A href="#how-it-work">How it works</A>
+      <A href="download">Download</A>
+      <A href="#biilabs">BiiLabs</A>
     </span>
   </StyledHeader>
 );
