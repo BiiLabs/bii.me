@@ -1,0 +1,27 @@
+sudo: false
+language: node_js
+node_js:
+- '8.9.0'
+cache: yarn
+branches:
+  only:
+  - styled-components-for-gh-pages
+notifications:
+  email: false
+  slack:
+    on_success: always
+before_script:
+- yarn clean
+script:
+- yarn export
+- touch out/.nojekyll
+env:
+- DEPLOY_ENV=github PROJ_NAME=frontend-boilerplate
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: ./out
+  on:
+    branch: styled-components-for-gh-pages
