@@ -19,7 +19,8 @@
     "next": "^9.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "styled-normalize": "^8.0.6"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.1",

@@ -1,5 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { Normalize } from 'styled-normalize';
 
 // @ts-ignore
 export default class MyDocument extends Document {
@@ -35,6 +36,7 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
         </Head>
+        <Normalize />
         <body>
           <Main />
           <NextScript />

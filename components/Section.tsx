@@ -5,6 +5,7 @@ interface ISectionProps {
   alignItems?: 'center' | 'flex-start' | 'flex-end';
   fullscreen?: boolean;
   first?: boolean;
+  background: string;
 }
 
 interface IProps {
@@ -14,35 +15,36 @@ interface IProps {
   first?: boolean;
   title?: string;
   desc?: string[];
+  background: string;
 }
 
 const StyledSection = styled.section<ISectionProps>`
   width: 100%;
-  padding-top: ${props => (props.first ? 'calc(8vh + 64px)' : '8vh')};
-  padding-bottom: 8vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: ${props => props.alignItems};
   text-align: ${props => props.textAlign};
   height: ${props => (props.fullscreen ? '100vh' : 'initial')};
   box-sizing: ${props => (props.fullscreen ? ' border-box' : 'initial')};
+  background: ${props => props.background};
 `;
 
 const Section: React.FunctionComponent<IProps> = ({
   children,
-  title = '',
   fullscreen = false,
   textAlign = 'left',
   first = false,
   alignItems = 'center',
+  background,
 }) => (
   <StyledSection
     fullscreen={fullscreen}
     textAlign={textAlign}
     first={first}
     alignItems={alignItems}
+    background={background}
   >
-    <h1>{title}</h1>
     {children}
   </StyledSection>
 );

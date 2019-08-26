@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Col, Layout, Row } from 'antd';
+import { Layout } from 'antd';
 
 import '@/assets/style.less';
 import Header from '@/components/Header';
@@ -24,13 +24,7 @@ const MainLayout: React.FunctionComponent<TProps> = ({
       <Meta />
     </Head>
     <Header />
-    <Layout.Content>
-      <Row type="flex" justify="center">
-        <Col xs={20} lg={12}>
-          {children}
-        </Col>
-      </Row>
-    </Layout.Content>
+    <Layout.Content>{children}</Layout.Content>
     <Layout.Footer> Footer is here </Layout.Footer>
     <GlobalStyles />
   </Layout>

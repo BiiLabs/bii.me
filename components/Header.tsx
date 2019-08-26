@@ -6,7 +6,6 @@ import { NAV_TITLE } from '@/constants';
 import { getRelativePath } from '@/utils';
 
 const StyledHeader = styled(Layout.Header)`
-  position: fixed;
   z-index: 2;
   width: 100%;
   background-color: rgba(240, 242, 245, 0.95);
