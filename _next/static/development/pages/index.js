@@ -720,7 +720,7 @@ var MenuIconWrapper = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].
 var MenuWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a).withConfig({
   displayName: "Menu__MenuWrapper",
   componentId: "sc-1i9j3n6-2"
-})(["position:absolute;right:0;left:0;top:0;z-index:8;bottom:", ";background-color:", ";"], function (props) {
+})(["position:fixed;right:0;left:0;top:0;z-index:8;bottom:", ";background-color:", ";"], function (props) {
   return props.active ? 0 : 'initial';
 }, function (props) {
   return props.active ? '#161e3c' : 'transparent';
