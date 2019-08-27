@@ -18,7 +18,7 @@ export const MenuIconWrapper = styled.a`
 `;
 
 export const MenuWrapper = styled(Row)<{ active: boolean }>`
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   top: 0;
