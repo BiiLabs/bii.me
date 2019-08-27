@@ -18,7 +18,7 @@ const Intro: React.FC = () => (
     background="linear-gradient(90deg, rgb(0, 156, 255), rgb(0, 266, 158))"
   >
     <Content type="flex" justify="center">
-      <Col xl={6} lg={10} md={12}>
+      <Col xl={7} lg={10} md={12}>
         <img
           style={{ width: 294 }}
           src={getRelativePath('/static/phone@2x.png')}
