@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 
 import Section from '@/components/Section';
 import Title from '@/components/SectionTitle';
-import { getRelativePath } from '@/utils';
+import { getRelativePath, media } from '@/utils';
 import styled from 'styled-components';
 
 const LI = styled.li`
@@ -11,13 +11,31 @@ const LI = styled.li`
   font-weight: normal;
   font-family: HelveticaNeue-Light, -apple-system, system-ui, Arial, sans-serif;
   list-style: none;
+
+  ${media('md')} {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+`;
+
+const DownloadTitle = styled(Title)`
+  ${media('md')} {
+    text-align: center;
+  }
+`;
+
+const IconWrapper = styled(Col)`
+  ${media('md')} {
+    text-align: center;
+    margin-bottom: 24px;
+  }
 `;
 
 const Download: React.FC = () => (
   <Section background="rgb(125, 204, 243)">
-    <Title id="download" margin="30px 0 0" color="rgb(28, 42, 77)">
+    <DownloadTitle id="download" margin="30px 0 0" color="rgb(28, 42, 77)">
       Experiene the universal DID service on BiiMe
-    </Title>
+    </DownloadTitle>
     <Row
       style={{
         width: '100%',
@@ -26,9 +44,9 @@ const Download: React.FC = () => (
         minHeight: 155,
       }}
     >
-      <Col offset={2} xl={3} lg={4} md={4} sm={22} xs={22}>
+      <IconWrapper offset={2} xl={3} lg={4} md={4} sm={22} xs={22}>
         <img src={getRelativePath('/static/icon-4.svg')} />
-      </Col>
+      </IconWrapper>
       <Col>
         <ul>
           <LI>

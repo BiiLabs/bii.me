@@ -65,11 +65,21 @@ const InfoGroup = styled(Row)`
   }
 `;
 
+const HowItWorksTitle = styled(Title)`
+  ${media('md')} {
+    text-align: center;
+  }
+`;
+
 const HowItWorks: React.FC = () => (
   <Section background="white">
-    <Title id="how-it-work" margin="46px 0 0" color="rgb(58, 173, 212)">
+    <HowItWorksTitle
+      id="how-it-work"
+      margin="46px 0 0"
+      color="rgb(58, 173, 212)"
+    >
       How BiiMe works for your services?
-    </Title>
+    </HowItWorksTitle>
     <ContentWrapper>
       <IconGroup>
         <Line />
