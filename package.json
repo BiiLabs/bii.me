@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "export": "next build && next export",
-    "deploy:github": "NODE_ENV=production DEPLOY_ENV=github yarn export && touch out/.nojekyll && gh-pages -o github -t -d out",
+    "deploy": "NODE_ENV=production yarn export && ./bin/deploy",
     "clean": "rm -rf node_modules/.cache && rm -rf node_modules/gh-pages/.cache"
   },
   "dependencies": {
