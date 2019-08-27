@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { Col } from 'antd';
+import { media } from '@/utils';
 
 export const Icon = styled.img`
   z-index: 1;
@@ -17,6 +18,10 @@ export const Description = styled.p<{ color: string }>`
   font-size: 18px;
   max-width: 220px;
   margin: 0;
+
+  ${media('md')} {
+    max-width: initial;
+  }
 `;
 
 export const Title = styled.h2<{ color: string }>`

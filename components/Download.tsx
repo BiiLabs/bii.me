@@ -44,11 +44,17 @@ const Download: React.FC = () => (
         minHeight: 155,
       }}
     >
-      <IconWrapper offset={2} xl={3} lg={4} md={4} sm={22} xs={22}>
+      <IconWrapper
+        xl={{ span: 3, offset: 2 }}
+        lg={{ span: 4, offset: 2 }}
+        md={{ span: 2, offset: 2 }}
+        sm={24}
+        xs={24}
+      >
         <img src={getRelativePath('/static/icon-4.svg')} />
       </IconWrapper>
       <Col>
-        <ul>
+        <ul style={{ marginLeft: 0 }}>
           <LI>
             <img
               style={{ marginRight: 20 }}
