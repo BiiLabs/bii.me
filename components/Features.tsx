@@ -8,7 +8,7 @@ import { getRelativePath } from '@/utils';
 
 const Features: React.FC = () => (
   <Section background="rgb(22, 30, 60)">
-    <Title id="features" margin="10px 0 0" fontSize={36}>
+    <Title id="features" margin="24px 0 0" fontSize={36}>
       Feature of BiiMe
     </Title>
     <Row style={{ width: '100%', padding: '40px 0 30px' }}>

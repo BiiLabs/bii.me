@@ -30,27 +30,28 @@ export const Title = styled.h2<{ color: string }>`
   margin: 0 0 10px;
 `;
 
+const Container = styled(Col)`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 18px;
+  ${media('md')} {
+    margin-top: 60px;
+  }
+`;
+
 const Item: React.FC<{
   title: string;
   description: string;
   icon?: string;
   color?: string;
 }> = ({ title, description, icon, color = 'white' }) => (
-  <Col
-    md={6}
-    sm={12}
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      alignItems: 'center',
-      padding: '0 18px',
-    }}
-  >
+  <Container md={6} sm={12}>
     {icon && <Icon src={icon} />}
     <Title color={color}>{title}</Title>
     <Description color={color}>{description}</Description>
-  </Col>
+  </Container>
 );
 
 export default Item;
