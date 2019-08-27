@@ -13,4 +13,14 @@ export const breakpoints = {
   tablet: '992',
 };
 
-export const mediaQueryPhone = `@media (max-width: ${breakpoints.phone}px)`;
+/**
+ * @param {string} threshold
+ * @param {string} displayWay 'max' or 'min'
+ */
+export const media = (
+  threshold: 'phone' | 'tablet',
+  displayWay: 'max' | 'min' = 'max',
+) => {
+  const breakpoint = breakpoints[threshold];
+  return `@media (${displayWay}-width: ${breakpoint}px)`;
+};

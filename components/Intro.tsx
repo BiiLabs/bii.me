@@ -4,12 +4,26 @@ import styled from 'styled-components';
 
 import Section from '@/components/Section';
 import Title from '@/components/SectionTitle';
-import { getRelativePath } from '@/utils';
+import { getRelativePath, media } from '@/utils';
 
 const Content = styled(Row)`
   padding-top: 140px;
   align-items: space-around;
   width: 100%;
+
+  ${media('tablet')} {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+const Center = styled.div`
+  ${media('tablet')} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Intro: React.FC = () => (
@@ -19,20 +33,24 @@ const Intro: React.FC = () => (
   >
     <Content type="flex" justify="center">
       <Col xl={6} lg={10} md={12}>
-        <img
-          style={{ width: 294 }}
-          src={getRelativePath('/static/phone@2x.png')}
-        />
-      </Col>
-      <Col lg={11} md={12}>
-        <Row style={{ fontSize: 38 }}>
+        <Center>
           <img
-            style={{ width: 57, marginRight: 21 }}
-            src={getRelativePath('/static/icon4@2x.png')}
+            style={{ width: 294 }}
+            src={getRelativePath('/static/phone@2x.png')}
           />
-          <span>BiiMe</span>
+        </Center>
+      </Col>
+      <Col>
+        <Row style={{ fontSize: 38 }}>
+          <Center>
+            <img
+              style={{ width: 57, marginRight: 21 }}
+              src={getRelativePath('/static/icon4@2x.png')}
+            />
+            <span>BiiMe</span>
+          </Center>
         </Row>
-        <Title margin="12.5px 0 0" color="rgb(28, 42, 77)">
+        <Title margin="12.5px 0 36px 0" color="rgb(28, 42, 77)">
           Universal open DLT ID solution
         </Title>
       </Col>
