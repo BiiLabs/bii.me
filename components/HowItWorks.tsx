@@ -58,7 +58,7 @@ const IconGroup = styled(Row)`
 
 const InfoGroup = styled(Row)`
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 52px;
   ${media('md')} {
     margin-top: 12px;
   }
@@ -73,16 +73,16 @@ const HowItWorks: React.FC = () => (
       <IconGroup>
         <Line />
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon3Getbiime@2x.png')} />
+          <Icon src={getRelativePath('/static/icon-3-getbiime.svg')} />
         </IconWrapper>
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon3Licensing@2x.png')} />
+          <Icon src={getRelativePath('/static/icon-3-licensing.svg')} />
         </IconWrapper>
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon3Verfivation@2x.png')} />
+          <Icon src={getRelativePath('/static/icon-3-verfivation.svg')} />
         </IconWrapper>
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon3AccessService@2x.png')} />
+          <Icon src={getRelativePath('/static/icon-3-access-service.svg')} />
         </IconWrapper>
       </IconGroup>
       <InfoGroup>

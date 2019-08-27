@@ -49,27 +49,27 @@ const Scenarios: React.FC = () => (
     <Row style={{ marginTop: 72, marginBottom: 52, width: '100%' }}>
       <TopLeftScenario
         title="Certificates"
-        icon={getRelativePath('/static/iconCertification@2x.png')}
+        icon={getRelativePath('/static/icon-certification.svg')}
       />
       <TopMiddleScenario
         title="Smart city"
-        icon={getRelativePath('/static/iconSmartCity@2x.png')}
+        icon={getRelativePath('/static/icon-smart-city.svg')}
       />
       <TopRightScenario
         title="Medical Record"
-        icon={getRelativePath('/static/iconMedicalRecord@2x.png')}
+        icon={getRelativePath('/static/icon-medical-record.svg')}
       />
       <BottomLeftScenario
         title="OAuth Login"
-        icon={getRelativePath('/static/iconOauthLogin@2x.png')}
+        icon={getRelativePath('/static/icon-oauth-login.svg')}
       />
       <BottomMiddleScenario
         title="Membership"
-        icon={getRelativePath('/static/iconMembership@2x.png')}
+        icon={getRelativePath('/static/icon-membership.svg')}
       />
       <BottomRightScenario
         title="Driver Licence"
-        icon={getRelativePath('/static/iconDriverLicence@2x.png')}
+        icon={getRelativePath('/static/icon-driver-licence.svg')}
       />
     </Row>
   </Section>

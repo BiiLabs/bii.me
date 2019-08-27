@@ -10,6 +10,7 @@ const LI = styled.li`
   font-size: 24px;
   font-weight: normal;
   font-family: HelveticaNeue-Light, -apple-system, system-ui, Arial, sans-serif;
+  list-style: none;
 `;
 
 const Download: React.FC = () => (
@@ -26,13 +27,31 @@ const Download: React.FC = () => (
       }}
     >
       <Col offset={2} xl={3} lg={4} md={4} sm={22} xs={22}>
-        <img src={getRelativePath('/static/icon4@2x.png')} />
+        <img src={getRelativePath('/static/icon-4.svg')} />
       </Col>
       <Col>
         <ul>
-          <LI>Integrate multiple services cross ID system</LI>
-          <LI>Retrieve data from uers authorization eaLIsy</LI>
-          <LI>Manage all digital assets in one APP</LI>
+          <LI>
+            <img
+              style={{ marginRight: 20 }}
+              src={getRelativePath('/static/haxagon.svg')}
+            />
+            Integrate multiple services cross ID system
+          </LI>
+          <LI>
+            <img
+              style={{ marginRight: 20 }}
+              src={getRelativePath('/static/haxagon.svg')}
+            />
+            Retrieve data from uers authorization eaLIsy
+          </LI>
+          <LI>
+            <img
+              style={{ marginRight: 20 }}
+              src={getRelativePath('/static/haxagon.svg')}
+            />
+            Manage all digital assets in one APP
+          </LI>
         </ul>
       </Col>
     </Row>

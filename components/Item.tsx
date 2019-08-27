@@ -9,6 +9,7 @@ export const Icon = styled.img`
   position: relative;
   background-color: white;
   border: 6px solid white;
+  width: 112px;
 `;
 
 export const Description = styled.p<{ color: string }>`

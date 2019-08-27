@@ -32,7 +32,7 @@ const Intro: React.FC = () => (
     background="linear-gradient(90deg, rgb(0, 156, 255), rgb(0, 266, 158))"
   >
     <Content type="flex" justify="center">
-      <Col xl={6} lg={10} md={12}>
+      <Col xl={7} lg={10} md={12}>
         <Center>
           <img
             style={{ width: 294 }}
@@ -40,12 +40,12 @@ const Intro: React.FC = () => (
           />
         </Center>
       </Col>
-      <Col>
+      <Col lg={11} md={12}>
         <Row style={{ fontSize: 38 }}>
           <Center>
             <img
               style={{ width: 57, marginRight: 21 }}
-              src={getRelativePath('/static/icon4@2x.png')}
+              src={getRelativePath('/static/icon-4.svg')}
             />
             <span>BiiMe</span>
           </Center>
