@@ -7,3 +7,10 @@ export function getRelativePath(path: string): string {
   }
   return path;
 }
+
+export const breakpoints = {
+  phone: '576',
+  tablet: '992',
+};
+
+export const mediaQueryPhone = `@media (max-width: ${breakpoints.phone}px)`;

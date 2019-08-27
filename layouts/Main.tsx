@@ -19,7 +19,7 @@ const MainLayout: React.FunctionComponent<TProps> = ({
   children,
   title = SITE_TITLE,
 }) => (
-  <Layout>
+  <Layout style={{ position: 'relative' }}>
     <Head>
       <title>{title}</title>
       <Meta />
