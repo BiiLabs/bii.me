@@ -14,7 +14,7 @@ const Scenarios: React.FC = () => (
     <Row style={{ marginTop: 72, marginBottom: 52, width: '100%' }}>
       <Scenario
         title="Certificates"
-        icon={getRelativePath('/static/iconCertification@2x.png')}
+        icon={getRelativePath('/static/icon-certification.svg')}
         style={{
           borderRight: '1.5px solid white',
           borderBottom: '1.5px solid white',
@@ -22,7 +22,7 @@ const Scenarios: React.FC = () => (
       />
       <Scenario
         title="Smart city"
-        icon={getRelativePath('/static/iconSmartCity@2x.png')}
+        icon={getRelativePath('/static/icon-smart-city.svg')}
         style={{
           borderRight: '1.5px solid white',
           borderBottom: '1.5px solid white',
@@ -30,28 +30,28 @@ const Scenarios: React.FC = () => (
       />
       <Scenario
         title="Medical Record"
-        icon={getRelativePath('/static/iconMedicalRecord@2x.png')}
+        icon={getRelativePath('/static/icon-medical-record.svg')}
         style={{
           borderBottom: '1.5px solid white',
         }}
       />
       <Scenario
         title="OAuth Login"
-        icon={getRelativePath('/static/iconOauthLogin@2x.png')}
+        icon={getRelativePath('/static/icon-oauth-login.svg')}
         style={{
           borderRight: '1.5px solid white',
         }}
       />
       <Scenario
         title="Membership"
-        icon={getRelativePath('/static/iconMembership@2x.png')}
+        icon={getRelativePath('/static/icon-membership.svg')}
         style={{
           borderRight: '1.5px solid white',
         }}
       />
       <Scenario
         title="Driver Licence"
-        icon={getRelativePath('/static/iconDriverLicence@2x.png')}
+        icon={getRelativePath('/static/icon-driver-licence.svg')}
       />
     </Row>
   </Section>

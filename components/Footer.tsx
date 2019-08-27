@@ -22,25 +22,28 @@ const Footer: React.FC = () => (
   >
     <Row type="flex" justify="space-between">
       <Col push={2}>
-        <img src={getRelativePath('/static/logoBiilabs@2x.png')} />
+        <img
+          style={{ width: 150 }}
+          src={getRelativePath('/static/logo-biilabs.svg')}
+        />
       </Col>
       <Col>
         <Row>
           <MediaLink
             uri="https://biilabs.io/"
-            img={getRelativePath('/static/linkEarth@2x.png')}
+            img={getRelativePath('/static/link-earth.svg')}
           />
           <MediaLink
             uri="https://www.facebook.com/biilabsrocks"
-            img={getRelativePath('/static/linkeFb@2x.png')}
+            img={getRelativePath('/static/linke-fb.svg')}
           />
           <MediaLink
             uri="https://twitter.com/BiiLabs"
-            img={getRelativePath('/static/linkTwitter@2x.png')}
+            img={getRelativePath('/static/link-twitter.svg')}
           />
           <MediaLink
             uri="https://medium.com/biilabs"
-            img={getRelativePath('/static/linkMedium@2x.png')}
+            img={getRelativePath('/static/link-medium.svg')}
           />
         </Row>
       </Col>

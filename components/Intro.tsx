@@ -28,7 +28,7 @@ const Intro: React.FC = () => (
         <Row style={{ fontSize: 38 }}>
           <img
             style={{ width: 57, marginRight: 21 }}
-            src={getRelativePath('/static/icon4@2x.png')}
+            src={getRelativePath('/static/icon-4.svg')}
           />
           <span>BiiMe</span>
         </Row>

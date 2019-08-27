@@ -37,7 +37,7 @@ export default () => (
   <StyledHeader>
     <Row type="flex" justify="space-between" style={{ width: '100%' }}>
       <Col style={{ display: 'flex', alignItems: 'center' }}>
-        <StyledImage src={getRelativePath('/static/icon4@2x.png')} alt="logo" />
+        <StyledImage src={getRelativePath('/static/icon-4.svg')} alt="logo" />
         <NavTitle>BiiMe</NavTitle>
       </Col>
       <Col>

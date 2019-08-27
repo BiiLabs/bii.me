@@ -5,6 +5,7 @@ import { Col } from 'antd';
 const Icon = styled.img`
   border-radius: 50%;
   margin-bottom: 15px;
+  width: 112px;
 `;
 
 const Description = styled.p<{ color: string }>`
