@@ -2,19 +2,23 @@ import styled from 'styled-components';
 
 import { Col } from 'antd';
 
-const Icon = styled.img`
+export const Icon = styled.img`
+  z-index: 1;
   border-radius: 50%;
   margin-bottom: 15px;
+  position: relative;
+  background-color: white;
+  border: 6px solid white;
 `;
 
-const Description = styled.p<{ color: string }>`
+export const Description = styled.p<{ color: string }>`
   color: ${props => props.color};
   font-size: 18px;
   max-width: 220px;
   margin: 0;
 `;
 
-const Title = styled.h2<{ color: string }>`
+export const Title = styled.h2<{ color: string }>`
   color: ${props => props.color};
   font-size: 28px;
   margin: 0 0 10px;
