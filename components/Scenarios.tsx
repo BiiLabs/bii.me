@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row } from 'antd';
+import styled from 'styled-components';
 
 import Section from '@/components/Section';
 import Title from '@/components/SectionTitle';
 import Scenario from '@/components/Scenario';
 import { getRelativePath, media } from '@/utils';
-import styled from 'styled-components';
 
 const TopLeftScenario = styled(Scenario)`
   border-right: 1.5px solid white;

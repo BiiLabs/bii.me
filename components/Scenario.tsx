@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'antd';
 import styled from 'styled-components';
+import { media } from '@/utils';
 
 const Container = styled(Col)`
   display: flex;
@@ -9,20 +10,34 @@ const Container = styled(Col)`
   align-items: center;
 `;
 
+const Title = styled(Col)`
+  color: #fff;
+  font-size: 36px;
+  margin-top: 56px;
+  margin-bottom: 30px;
+
+  ${media('md')} {
+    font-size: 28px;
+  }
+`;
+
+const Img = styled.img`
+  hight: 180px;
+  width: 180px;
+  margin-bottom: 62px;
+
+  ${media('md')} {
+    width: 90%;
+  }
+`;
+
 const Scenario: React.FC<{
   title: string;
   icon: string;
 }> = props => (
   <Container xs={12} sm={12} md={8} {...props}>
-    <h2
-      style={{ color: 'white', fontSize: 36, marginTop: 56, marginBottom: 30 }}
-    >
-      {props.title}
-    </h2>
-    <img
-      src={props.icon}
-      style={{ height: '180px', width: '180px', marginBottom: '62px' }}
-    />
+    <Title>{props.title}</Title>
+    <Img src={props.icon} />
   </Container>
 );
 
