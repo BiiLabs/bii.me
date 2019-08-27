@@ -76,7 +76,7 @@ const Menu: React.FC = () => {
 
   return (
     <MenuWrapper active={isActive}>
-      <Col xs={24} sm={0}>
+      <Col sm={24} md={0}>
         <MenuIconWrapper
           onClick={e => {
             e.preventDefault();
@@ -115,7 +115,6 @@ export default () => (
     <StyledHeader>
       <Row type="flex" justify="space-between" style={{ width: '100%' }}>
         <Col
-          span={6}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -130,7 +129,8 @@ export default () => (
         </Col>
         <Col
           xs={0}
-          sm={18}
+          sm={0}
+          md={20}
           style={{
             textAlign: 'end',
           }}
