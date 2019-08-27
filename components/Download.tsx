@@ -25,7 +25,7 @@ const Download: React.FC = () => (
         minHeight: 155,
       }}
     >
-      <Col offset={2} xl={3} lg={4} md={4} sm={24} xs={24}>
+      <Col offset={2} xl={3} lg={4} md={4} sm={22} xs={22}>
         <img src={getRelativePath('/static/icon4@2x.png')} />
       </Col>
       <Col>
