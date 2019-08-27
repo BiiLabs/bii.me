@@ -17,5 +17,5 @@ $ yarn dev
 ## deploy
 
 ```
-$ yarn deploy:github
+$ yarn deploy
 ```
