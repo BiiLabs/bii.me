@@ -804,7 +804,7 @@ var Container = Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"]
 var Title = Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(antd_lib_col__WEBPACK_IMPORTED_MODULE_2___default.a).withConfig({
   displayName: "Scenario__Title",
   componentId: "o592w8-1"
-})(["color:#fff;font-size:36px;margin-top:56px;margin-bottom:30px;", "{font-size:22px;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_5__["media"])('md'));
+})(["color:#fff;font-size:36px;margin-top:56px;margin-bottom:30px;", "{font-size:22px;text-align:center;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_5__["media"])('md'));
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].img.withConfig({
   displayName: "Scenario__Img",
   componentId: "o592w8-2"
