@@ -9,8 +9,9 @@ export function getRelativePath(path: string): string {
 }
 
 export const breakpoints = {
-  phone: '576',
-  tablet: '992',
+  sm: '576',
+  md: '768',
+  lg: '992',
 };
 
 /**
@@ -18,7 +19,7 @@ export const breakpoints = {
  * @param {string} displayWay 'max' or 'min'
  */
 export const media = (
-  threshold: 'phone' | 'tablet',
+  threshold: 'sm' | 'md' | 'lg',
   displayWay: 'max' | 'min' = 'max',
 ) => {
   const breakpoint = breakpoints[threshold];

@@ -10,7 +10,7 @@ const Title = styled.h1<{
   color: ${props => props.color || 'rgb(255,255,255)'};
   margin: ${props => props.margin || '0'};
 
-  ${media('tablet')} {
+  ${media('lg')} {
     font-size: 36px;
   }
 `;

@@ -11,7 +11,7 @@ const Content = styled(Row)`
   align-items: space-around;
   width: 100%;
 
-  ${media('tablet')} {
+  ${media('lg')} {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ const Content = styled(Row)`
 `;
 
 const Center = styled.div`
-  ${media('tablet')} {
+  ${media('lg')} {
     display: flex;
     justify-content: center;
     align-items: center;
