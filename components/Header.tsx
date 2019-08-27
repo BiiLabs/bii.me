@@ -15,6 +15,7 @@ const StyledHeader = styled(Layout.Header)`
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  line-height: initial;
 `;
 
 const StyledImage = styled.img`
