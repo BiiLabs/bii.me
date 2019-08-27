@@ -138,7 +138,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #7F7F7F;
+  color: #1c2a4d;
   text-decoration: none;
   background-color: transparent;
   outline: none;
@@ -147,10 +147,10 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  color: #8c8484;
+  color: #2e3c59;
 }
 a:active {
-  color: #595454;
+  color: #0c1226;
 }
 a:active,
 a:hover {
@@ -309,7 +309,7 @@ mark {
 }
 ::selection {
   color: #fff;
-  background: #7F7F7F;
+  background: #1c2a4d;
 }
 .clearfix {
   zoom: 1;
@@ -631,7 +631,7 @@ mark {
   bottom: -1px;
   left: -1px;
   display: block;
-  border: 0 solid #7F7F7F;
+  border: 0 solid #1c2a4d;
   border-radius: inherit;
   opacity: 0.2;
   animation: fadeEffect 2s cubic-bezier(0.08, 0.82, 0.17, 1), waveEffect 0.4s cubic-bezier(0.08, 0.82, 0.17, 1);
