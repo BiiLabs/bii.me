@@ -8,6 +8,10 @@ const Container = styled(Col)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  ${media('md')} {
+    height: 340px;
+  }
 `;
 
 const Title = styled(Col)`
@@ -17,7 +21,8 @@ const Title = styled(Col)`
   margin-bottom: 30px;
 
   ${media('md')} {
-    font-size: 28px;
+    font-size: 22px;
+    text-align: center;
   }
 `;
 
