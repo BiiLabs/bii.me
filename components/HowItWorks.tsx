@@ -61,6 +61,7 @@ const InfoGroup = styled(Row)`
   padding-bottom: 52px;
   ${media('md')} {
     margin-top: 12px;
+    padding-bottom: 0px;
   }
 `;
 
