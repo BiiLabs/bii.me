@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { Layout } from 'antd';
+import { Layout, Row, Col } from 'antd';
 
-import { NAV_TITLE } from '@/constants';
 import { getRelativePath } from '@/utils';
 
 const StyledHeader = styled(Layout.Header)`
   z-index: 2;
   width: 100%;
-  background-color: rgba(240, 242, 245, 0.95);
+  background-color: transparent;
+  position: absolute;
   height: auto;
   padding: 12px 36px;
   display: flex;
@@ -17,33 +17,36 @@ const StyledHeader = styled(Layout.Header)`
 `;
 
 const StyledImage = styled.img`
-  height: 2.5rem;
+  width: 27px;
 `;
 
 const NavTitle = styled.span`
-  line-height: 2.5rem;
   display: inline-block;
-  font-size: 15px;
+  font-size: 24px;
   margin-left: 10px;
-  transform: translateY(5px);
+  color: rgb(28, 42, 77);
 `;
 
 const A = styled.a`
-  margin-right: 20px;
+  margin-left: 34px;
+  color: #fff;
+  font-size: 20px;
 `;
 
 export default () => (
   <StyledHeader>
-    <span>
-      <StyledImage src={getRelativePath('/static/logo.svg')} alt="logo" />
-      <NavTitle>{NAV_TITLE}</NavTitle>
-    </span>
-    <span>
-      <A href="#features">Features</A>
-      <A href="#scenarios">Scenarios</A>
-      <A href="#how-it-work">How it works</A>
-      <A href="download">Download</A>
-      <A href="#biilabs">BiiLabs</A>
-    </span>
+    <Row type="flex" justify="space-between" style={{ width: '100%' }}>
+      <Col style={{ display: 'flex', alignItems: 'center' }}>
+        <StyledImage src={getRelativePath('/static/icon4@2x.png')} alt="logo" />
+        <NavTitle>BiiMe</NavTitle>
+      </Col>
+      <Col>
+        <A href="#features">Features</A>
+        <A href="#scenarios">Scenarios</A>
+        <A href="#how-it-work">How it works</A>
+        <A href="#download">Download</A>
+        <A href="https://biilabs.io/">BiiLabs</A>
+      </Col>
+    </Row>
   </StyledHeader>
 );

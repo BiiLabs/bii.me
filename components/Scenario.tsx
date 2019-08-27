@@ -2,10 +2,12 @@ import React from 'react';
 import { Col } from 'antd';
 
 const Scenario: React.FC<{
-  style: object;
-}> = ({ style }) => (
+  title: string;
+  icon: string;
+  style?: object;
+}> = ({ title, style, icon }) => (
   <Col
-    xs={8}
+    sm={8}
     style={{
       display: 'flex',
       flexDirection: 'column',
@@ -14,10 +16,14 @@ const Scenario: React.FC<{
       ...style,
     }}
   >
-    <h2 style={{ color: 'white' }}>Certificates</h2>
+    <h2
+      style={{ color: 'white', fontSize: 36, marginTop: 56, marginBottom: 30 }}
+    >
+      {title}
+    </h2>
     <img
-      src="https://dummyimage.com/100x100.jpg?text=icon"
-      style={{ height: '160px', width: '160px', marginBottom: '30px' }}
+      src={icon}
+      style={{ height: '180px', width: '180px', marginBottom: '62px' }}
     />
   </Col>
 );

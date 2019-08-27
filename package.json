@@ -1,5 +1,5 @@
 {
-  "name": "with-ant-design",
+  "name": "biime.biilabs.io",
   "version": "1.0.0",
   "scripts": {
     "dev": "node server.js",
@@ -59,6 +59,5 @@
     "singleQuote": true,
     "jsxSingleQuote": false,
     "trailingComma": "all"
-  },
-  "license": "ISC"
+  }
 }

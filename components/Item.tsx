@@ -9,12 +9,15 @@ const Icon = styled.img`
 
 const Description = styled.p<{ color: string }>`
   color: ${props => props.color};
-  font-size: 13.5px;
+  font-size: 18px;
+  max-width: 220px;
+  margin: 0;
 `;
 
 const Title = styled.h2<{ color: string }>`
   color: ${props => props.color};
-  font-size: 21.6px;
+  font-size: 28px;
+  margin: 0 0 10px;
 `;
 
 const Item: React.FC<{
@@ -24,7 +27,8 @@ const Item: React.FC<{
   color?: string;
 }> = ({ title, description, icon, color = 'white' }) => (
   <Col
-    sm={6}
+    md={6}
+    sm={12}
     style={{
       display: 'flex',
       justifyContent: 'center',

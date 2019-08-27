@@ -23,10 +23,10 @@ const StyledSection = styled.section<ISectionProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
   align-items: ${props => props.alignItems};
   text-align: ${props => props.textAlign};
   height: ${props => (props.fullscreen ? '100vh' : 'initial')};
-  box-sizing: ${props => (props.fullscreen ? ' border-box' : 'initial')};
   background: ${props => props.background};
 `;
 

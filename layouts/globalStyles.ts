@@ -3,8 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   h1 {
     font-size: 2.5em;
-    letter-spacing: 0.1em;
-    margin-top: 12px;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   p {
     font-size: 20px;
@@ -21,3 +22,7 @@ export default createGlobalStyle`
     }
   }
 `;
+
+export const colors = {
+  primary: 'rgb(28, 42, 77)',
+};
