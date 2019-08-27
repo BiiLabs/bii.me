@@ -67,7 +67,7 @@ const Download: React.FC = () => (
               style={{ marginRight: 20 }}
               src={getRelativePath('/static/haxagon.svg')}
             />
-            Retrieve data from uers authorization ealisy
+            Retrieve data from users authorization ealisy
           </LI>
           <LI>
             <img
