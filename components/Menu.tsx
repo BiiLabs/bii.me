@@ -29,10 +29,10 @@ export const MenuWrapper = styled(Row)<{ active: boolean }>`
 
 export const MenuItem = styled.a`
   display: block;
-  font-size: 56px;
+  font-size: 32px;
   color: #ffffff;
-  padding-top: 64px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 12px;
   margin-left: 32px;
   margin-right: 13px;
   border-bottom: 1px solid #fff;
@@ -49,7 +49,13 @@ export const Menu: React.FC = () => {
             setIsActive(prev => !prev);
           }}
         >
-          <MenuIcon src="/static/button-option.svg" />
+          <MenuIcon
+            src={
+              isActive
+                ? '/static/button-option-close.svg'
+                : '/static/button-option.svg'
+            }
+          />
         </MenuIconWrapper>
       </Col>
       {isActive && (
