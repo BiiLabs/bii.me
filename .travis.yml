@@ -5,7 +5,7 @@ node_js:
 cache: yarn
 branches:
   only:
-  - styled-components-for-gh-pages
+  - master
 notifications:
   email: false
   slack:
@@ -16,7 +16,7 @@ script:
 - yarn export
 - touch out/.nojekyll
 env:
-- DEPLOY_ENV=github PROJ_NAME=frontend-boilerplate
+- DEPLOY_ENV=github PROJ_NAME=biime.biilabs.io
 deploy:
   provider: pages
   skip_cleanup: true
@@ -24,4 +24,4 @@ deploy:
   keep_history: true
   local_dir: ./out
   on:
-    branch: styled-components-for-gh-pages
+    branch: master
