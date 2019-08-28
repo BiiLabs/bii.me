@@ -91,7 +91,7 @@ var Download = function Download() {
       marginRight: 20
     },
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_7__["getRelativePath"])('/static/haxagon.svg')
-  }), "Retrieve data from uers authorization ealisy"), __jsx(LI, null, __jsx("img", {
+  }), "Retrieve data from users authorization ealisy"), __jsx(LI, null, __jsx("img", {
     style: {
       marginRight: 20
     },
@@ -403,25 +403,29 @@ var IconWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default
   displayName: "HowItWorks__IconWrapper",
   componentId: "sc-15i6khg-0"
 })(["display:flex;justify-content:center;flex:1;align-items:flex-start;"]);
+var StyledIcon = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(_Item__WEBPACK_IMPORTED_MODULE_7__["Icon"]).withConfig({
+  displayName: "HowItWorks__StyledIcon",
+  componentId: "sc-15i6khg-1"
+})(["background-color:white;border:6px solid white;"]);
 var Line = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
   displayName: "HowItWorks__Line",
-  componentId: "sc-15i6khg-1"
+  componentId: "sc-15i6khg-2"
 })(["position:absolute;left:10%;width:80%;height:4px;background-color:#29abe2;top:50%;transform:translateY(-50%);", "{width:4px;height:80%;top:0;left:50%;transform:translateX(-50%);}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('md'));
 var ContentWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
   displayName: "HowItWorks__ContentWrapper",
-  componentId: "sc-15i6khg-2"
+  componentId: "sc-15i6khg-3"
 })(["width:100%;", "{margin-top:64px;display:flex;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('md'));
 var IconGroup = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
   displayName: "HowItWorks__IconGroup",
-  componentId: "sc-15i6khg-3"
+  componentId: "sc-15i6khg-4"
 })(["width:100%;margin-top:48px;", "{width:auto;margin-top:0px;margin-right:22px;position:relative;display:flex;align-items:center;justify-content:space-between;flex-direction:column;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('md'));
 var InfoGroup = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
   displayName: "HowItWorks__InfoGroup",
-  componentId: "sc-15i6khg-4"
+  componentId: "sc-15i6khg-5"
 })(["width:100%;padding-bottom:52px;", "{margin-top:12px;padding-bottom:0px;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('md'));
 var HowItWorksTitle = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(_SectionTitle__WEBPACK_IMPORTED_MODULE_6__["default"]).withConfig({
   displayName: "HowItWorks__HowItWorksTitle",
-  componentId: "sc-15i6khg-5"
+  componentId: "sc-15i6khg-6"
 })(["", "{text-align:center;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('md'));
 
 var HowItWorks = function HowItWorks() {
@@ -434,22 +438,22 @@ var HowItWorks = function HowItWorks() {
   }, "How BiiMe works for your services?"), __jsx(ContentWrapper, null, __jsx(IconGroup, null, __jsx(Line, null), __jsx(IconWrapper, {
     md: 6,
     sm: 24
-  }, __jsx(_Item__WEBPACK_IMPORTED_MODULE_7__["Icon"], {
+  }, __jsx(StyledIcon, {
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/icon-3-getbiime.svg')
   })), __jsx(IconWrapper, {
     md: 6,
     sm: 24
-  }, __jsx(_Item__WEBPACK_IMPORTED_MODULE_7__["Icon"], {
+  }, __jsx(StyledIcon, {
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/icon-3-licensing.svg')
   })), __jsx(IconWrapper, {
     md: 6,
     sm: 24
-  }, __jsx(_Item__WEBPACK_IMPORTED_MODULE_7__["Icon"], {
+  }, __jsx(StyledIcon, {
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/icon-3-verfivation.svg')
   })), __jsx(IconWrapper, {
     md: 6,
     sm: 24
-  }, __jsx(_Item__WEBPACK_IMPORTED_MODULE_7__["Icon"], {
+  }, __jsx(StyledIcon, {
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/icon-3-access-service.svg')
   }))), __jsx(InfoGroup, null, __jsx(_Info__WEBPACK_IMPORTED_MODULE_10__["Info"], {
     title: "Get BiiMe DID",
@@ -636,7 +640,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 var Icon = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
   displayName: "Item__Icon",
   componentId: "sc-579nym-0"
-})(["z-index:1;border-radius:50%;margin-bottom:15px;position:relative;background-color:white;border:6px solid white;width:112px;"]);
+})(["z-index:1;border-radius:50%;margin-bottom:15px;position:relative;width:112px;"]);
 var Description = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Item__Description",
   componentId: "sc-579nym-1"
@@ -658,13 +662,15 @@ var Item = function Item(_ref) {
   var title = _ref.title,
       description = _ref.description,
       icon = _ref.icon,
+      iconStyle = _ref.iconStyle,
       _ref$color = _ref.color,
       color = _ref$color === void 0 ? 'white' : _ref$color;
   return __jsx(Container, {
     md: 6,
     sm: 12
   }, icon && __jsx(Icon, {
-    src: icon
+    src: icon,
+    style: iconStyle
   }), __jsx(Title, {
     color: color
   }, title), __jsx(Description, {
@@ -1109,7 +1115,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  h1 {\n    font-size: 2.5em;\n    line-height: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n  p {\n    font-size: 20px;\n  }\n\n  @media only screen and (max-width: 768px) {\n    h1 {\n      font-size: 1.5em;\n      letter-spacing: inherit;\n    }\n    p {\n      font-weight: 300;\n      font-size: 20px;\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  h1 {\n    font-size: 2.5em;\n    line-height: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n  p {\n    font-size: 20px;\n    font-family: HelveticaNeue-Light, -apple-system, system-ui, Arial, sans-serif;\n  }\n\n  @media only screen and (max-width: 768px) {\n    h1 {\n      font-size: 1.5em;\n      letter-spacing: inherit;\n    }\n    p {\n      font-weight: 300;\n      font-size: 20px;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
