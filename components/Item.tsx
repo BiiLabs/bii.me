@@ -8,8 +8,6 @@ export const Icon = styled.img`
   border-radius: 50%;
   margin-bottom: 15px;
   position: relative;
-  background-color: white;
-  border: 6px solid white;
   width: 112px;
 `;
 
@@ -46,9 +44,10 @@ const Item: React.FC<{
   description: string;
   icon?: string;
   color?: string;
-}> = ({ title, description, icon, color = 'white' }) => (
+  iconStyle?: object;
+}> = ({ title, description, icon, iconStyle, color = 'white' }) => (
   <Container md={6} sm={12}>
-    {icon && <Icon src={icon} />}
+    {icon && <Icon src={icon} style={iconStyle} />}
     <Title color={color}>{title}</Title>
     <Description color={color}>{description}</Description>
   </Container>

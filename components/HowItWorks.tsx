@@ -15,6 +15,11 @@ const IconWrapper = styled(Col)`
   align-items: flex-start;
 `;
 
+const StyledIcon = styled(Icon)`
+  background-color: white;
+  border: 6px solid white;
+`;
+
 const Line = styled.div`
   position: absolute;
   left: 10%;
@@ -84,16 +89,18 @@ const HowItWorks: React.FC = () => (
       <IconGroup>
         <Line />
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon-3-getbiime.svg')} />
+          <StyledIcon src={getRelativePath('/static/icon-3-getbiime.svg')} />
         </IconWrapper>
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon-3-licensing.svg')} />
+          <StyledIcon src={getRelativePath('/static/icon-3-licensing.svg')} />
         </IconWrapper>
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon-3-verfivation.svg')} />
+          <StyledIcon src={getRelativePath('/static/icon-3-verfivation.svg')} />
         </IconWrapper>
         <IconWrapper md={6} sm={24}>
-          <Icon src={getRelativePath('/static/icon-3-access-service.svg')} />
+          <StyledIcon
+            src={getRelativePath('/static/icon-3-access-service.svg')}
+          />
         </IconWrapper>
       </IconGroup>
       <InfoGroup>

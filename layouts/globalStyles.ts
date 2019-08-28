@@ -9,6 +9,7 @@ export default createGlobalStyle`
   }
   p {
     font-size: 20px;
+    font-family: HelveticaNeue-Light, -apple-system, system-ui, Arial, sans-serif;
   }
 
   @media only screen and (max-width: 768px) {
