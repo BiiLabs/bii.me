@@ -31,6 +31,17 @@ const IconWrapper = styled(Col)`
   }
 `;
 
+const ButtonsWrapper = styled(Row)`
+  margin-top: 24px;
+  margin-bottom: 12px;
+
+  ${media('lg')} {
+    margin-top: 72px;
+    margin-bottom: 38px;
+    justify-content: center;
+  }
+`;
+
 const Download: React.FC = () => (
   <Section background="rgb(125, 204, 243)">
     <DownloadTitle id="download" margin="30px 0 0" color="rgb(28, 42, 77)">
@@ -77,6 +88,21 @@ const Download: React.FC = () => (
             Manage all digital assets in one APP
           </LI>
         </ul>
+
+        <ButtonsWrapper type="flex" justify="center">
+          <p style={{ marginRight: 25 }}>Download the APP on</p>
+          <span>
+            <a
+              href="https://testflight.apple.com/join/DSWpIJ36"
+              style={{ marginRight: 30 }}
+            >
+              <img src={getRelativePath('/static/button-app-store.svg')} />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.biime">
+              <img src={getRelativePath('/static/button-google-play.svg')} />
+            </a>
+          </span>
+        </ButtonsWrapper>
       </Col>
     </Row>
   </Section>
