@@ -45,6 +45,10 @@ var IconWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_8__["default
   displayName: "Download__IconWrapper",
   componentId: "sc-1mj6p9x-2"
 })(["", "{text-align:center;margin-bottom:24px;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_7__["media"])('md'));
+var ButtonsWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_8__["default"])(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
+  displayName: "Download__ButtonsWrapper",
+  componentId: "sc-1mj6p9x-3"
+})(["margin-top:24px;margin-bottom:12px;", "{margin-top:72px;margin-bottom:38px;justify-content:center;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_7__["media"])('lg'));
 
 var Download = function Download() {
   return __jsx(_Section__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -96,7 +100,25 @@ var Download = function Download() {
       marginRight: 20
     },
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_7__["getRelativePath"])('/static/haxagon.svg')
-  }), "Manage all digital assets in one APP")))));
+  }), "Manage all digital assets in one APP")), __jsx(ButtonsWrapper, {
+    type: "flex",
+    justify: "center"
+  }, __jsx("p", {
+    style: {
+      marginRight: 25
+    }
+  }, "Download the APP on"), __jsx("span", null, __jsx("a", {
+    href: "https://testflight.apple.com/join/DSWpIJ36",
+    style: {
+      marginRight: 30
+    }
+  }, __jsx("img", {
+    src: Object(_utils__WEBPACK_IMPORTED_MODULE_7__["getRelativePath"])('/static/button-app-store.svg')
+  })), __jsx("a", {
+    href: "https://play.google.com/store/apps/details?id=com.biime"
+  }, __jsx("img", {
+    src: Object(_utils__WEBPACK_IMPORTED_MODULE_7__["getRelativePath"])('/static/button-google-play.svg')
+  })))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Download);
@@ -567,9 +589,13 @@ var Content = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(
   displayName: "Intro__Content",
   componentId: "sc-6kbgpm-0"
 })(["padding-top:140px;align-items:space-around;width:100%;", "{flex-direction:column-reverse;justify-content:center;align-items:center;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('lg'));
+var ButtonsWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a).withConfig({
+  displayName: "Intro__ButtonsWrapper",
+  componentId: "sc-6kbgpm-1"
+})(["width:100%;margin-top:120px;", "{margin-top:72px;margin-bottom:38px;justify-content:center;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('lg'));
 var Center = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "Intro__Center",
-  componentId: "sc-6kbgpm-1"
+  componentId: "sc-6kbgpm-2"
 })(["", "{display:flex;justify-content:center;align-items:center;}"], Object(_utils__WEBPACK_IMPORTED_MODULE_8__["media"])('lg'));
 
 var Intro = function Intro() {
@@ -604,7 +630,21 @@ var Intro = function Intro() {
   }), __jsx("span", null, "BiiMe"))), __jsx(_SectionTitle__WEBPACK_IMPORTED_MODULE_7__["default"], {
     margin: "12.5px 0 36px 0",
     color: "rgb(28, 42, 77)"
-  }, "Universal open DLT ID solution"))));
+  }, "Universal open DLT ID solution"), __jsx(ButtonsWrapper, {
+    type: "flex",
+    justify: "end"
+  }, __jsx("a", {
+    href: "https://testflight.apple.com/join/DSWpIJ36",
+    style: {
+      marginRight: 15
+    }
+  }, __jsx("img", {
+    src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/button-app-store.svg')
+  })), __jsx("a", {
+    href: "https://play.google.com/store/apps/details?id=com.biime"
+  }, __jsx("img", {
+    src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/button-google-play.svg')
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Intro);
