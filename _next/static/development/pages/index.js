@@ -160,7 +160,7 @@ var Features = function Features() {
     id: "features",
     margin: "24px 0 0",
     fontSize: 36
-  }, "Feature of BiiMe"), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "BiiMe Features"), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
     style: {
       width: '100%',
       padding: '40px 0 30px'
@@ -168,19 +168,19 @@ var Features = function Features() {
   }, __jsx(_Item__WEBPACK_IMPORTED_MODULE_4__["default"], {
     icon: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["getRelativePath"])('/static/icon-digital-id.svg'),
     title: "Digital ID",
-    description: "Containing the certificate and verification, so it makes KYC reusable to lower the cost of tracing for data authentication."
+    description: "An ID identifier that meets GDPR compliant and W3C protocol. It also could be used as cross platform account."
   }), __jsx(_Item__WEBPACK_IMPORTED_MODULE_4__["default"], {
     icon: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["getRelativePath"])('/static/icon-data-exchange.svg'),
     title: "Data Exchangeable",
-    description: "Users are able to authorize their data  and digital assets exchangeable from users are able to authorize their data multiple services. "
+    description: "Users can authorize their exchangeable data and digital assets on multiple services."
   }), __jsx(_Item__WEBPACK_IMPORTED_MODULE_4__["default"], {
     icon: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["getRelativePath"])('/static/icon-traceability.svg'),
     title: "Traceability",
-    description: "Containing the certificate and verification, so it makes KYC reusable to lower the cost of tracing for data authentication."
+    description: "Contain the certificate and verification, making KYC reusable to lower the cost of tracing for data authentication."
   }), __jsx(_Item__WEBPACK_IMPORTED_MODULE_4__["default"], {
     icon: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["getRelativePath"])('/static/icon-account-integration.svg'),
-    title: "Account integration",
-    description: "Account as DID with single sign in and APIs. easily integrate new and existing."
+    title: "Account Integration",
+    description: "Account as DID with single sign-on (SSO) in and APIs. easily integrate new and existing accounts."
   })));
 };
 
@@ -482,13 +482,13 @@ var HowItWorks = function HowItWorks() {
     description: "Service owners may use your existing account system and connect BiiMe with OAuth API, or using BiiMe APP developed by BiiLabs directly."
   }), __jsx(_Info__WEBPACK_IMPORTED_MODULE_10__["Info"], {
     title: "Licensing",
-    description: "Once users request to join your service, then users are able to authorize their information and personal data on DID or offline to meet your licensing proof."
+    description: "Once the users request to join your services, they are able to authorize their information and personal data on DID or offline to meet your licensing proof."
   }), __jsx(_Info__WEBPACK_IMPORTED_MODULE_10__["Info"], {
     title: "Verification",
-    description: "Only need scan users QR code in the APP to verifiy if users meet the qualification without more detail information or prove ducuments."
+    description: "Only need to scan the users QR code to verify if they meet the qualification without more detail information or prove ducuments."
   }), __jsx(_Info__WEBPACK_IMPORTED_MODULE_10__["Info"], {
     title: "Access Service",
-    description: "Easily to manage the qualification to access control of the service, and speed up the user base and integrate multiple services cross different departments."
+    description: "Easily manage the qualification to access the control of the services, and speed up the user base and integrate multiple services across different department."
   }))));
 };
 
@@ -615,7 +615,7 @@ var Intro = function Intro() {
     },
     src: Object(_utils__WEBPACK_IMPORTED_MODULE_8__["getRelativePath"])('/static/phone@2x.png')
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    lg: 11,
+    lg: 13,
     md: 12
   }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
     style: {
@@ -630,7 +630,7 @@ var Intro = function Intro() {
   }), __jsx("span", null, "BiiMe"))), __jsx(_SectionTitle__WEBPACK_IMPORTED_MODULE_7__["default"], {
     margin: "12.5px 0 36px 0",
     color: "rgb(28, 42, 77)"
-  }, "Universal open DLT ID solution"), __jsx(ButtonsWrapper, {
+  }, "Universal Open DLT ID Solution"), __jsx(ButtonsWrapper, {
     type: "flex",
     justify: "end"
   }, __jsx("a", {
@@ -940,7 +940,7 @@ var Scenarios = function Scenarios() {
     title: "Certificates",
     icon: Object(_utils__WEBPACK_IMPORTED_MODULE_7__["getRelativePath"])('/static/icon-certification.svg')
   }), __jsx(TopMiddleScenario, {
-    title: "Smart city",
+    title: "Smart City",
     icon: Object(_utils__WEBPACK_IMPORTED_MODULE_7__["getRelativePath"])('/static/icon-smart-city.svg')
   }), __jsx(TopRightScenario, {
     title: "Medical Record",
@@ -12992,12 +12992,12 @@ exports["default"] = function () {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -13223,12 +13223,12 @@ process.umask = function() { return 0; };
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -13863,12 +13863,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -13949,12 +13949,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -14388,12 +14388,12 @@ function polyfill(Component) {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -18303,12 +18303,12 @@ module.exports = warning;
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_7aff549c98b978433226 ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_829b10deddf10e1653a8 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_829b10deddf10e1653a8 */ "dll-reference dll_829b10deddf10e1653a8"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -18396,14 +18396,14 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_7aff549c98b978433226":
+/***/ "dll-reference dll_829b10deddf10e1653a8":
 /*!*******************************************!*\
-  !*** external "dll_7aff549c98b978433226" ***!
+  !*** external "dll_829b10deddf10e1653a8" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_7aff549c98b978433226;
+module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
