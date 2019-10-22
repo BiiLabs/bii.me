@@ -1,4 +1,4 @@
 source .env
 touch out/.nojekyll
 echo $PROJ_NAME > ./out/CNAME
-gh-pages -o github -t -d out
+gh-pages -o origin -t -d out
